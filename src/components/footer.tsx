@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
               <div className='flex items-center space-x-2'>
                 <img src={EmailIcon} alt="EmailIcon" className='w-10 h-auto' />
                 <p className='font-inter font-semibold'>
-                  sumberrejeki@gmail.com
+                  717sumberrejeki@gmail.com
                 </p>
               </div>
             </div>
