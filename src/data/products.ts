@@ -17,6 +17,7 @@ export interface Product {
   image: string;
   category: string;
   bestseller: boolean;
+  likes: boolean;
   stock: number;
 }
 
@@ -25,10 +26,11 @@ export const Products: Product[] = [
     id: 1,
     name: 'Brambang Goreng',
     price: 25000,
-    description: 'Brambang Goreng',
+    description: 'Brambang Goreng enak banget bikin nagih, dibuat dengan minyak yang baru dan dikeringkan menggunakan mesin pengering',
     image: banggor,
     category: 'Jajanan',
     bestseller: true,
+    likes: true,
     stock: 12
   },
   {
@@ -39,6 +41,7 @@ export const Products: Product[] = [
     image: kunyitAsem,
     category: 'Minuman',
     bestseller: true,
+    likes: false,
     stock: 9
   },
   {
@@ -49,6 +52,7 @@ export const Products: Product[] = [
     image: berasKencur,
     category: 'Minuman',
     bestseller: true,
+    likes: false,
     stock: 8
   },
   {
@@ -59,6 +63,7 @@ export const Products: Product[] = [
     image: klepon,
     category: 'Jajanan',
     bestseller: false,
+    likes: false,
     stock: 10
   },
   {
@@ -69,6 +74,7 @@ export const Products: Product[] = [
     image: kueLapis,
     category: 'Jajanan',
     bestseller: false,
+    likes: false,
     stock: 15
   },
   {
@@ -79,6 +85,7 @@ export const Products: Product[] = [
     image: kueTete,
     category: 'Jajanan',
     bestseller: false,
+    likes: false,
     stock: 19
   },
   {
@@ -89,6 +96,7 @@ export const Products: Product[] = [
     image: nasiKuning,
     category: 'Makanan',
     bestseller: false,
+    likes: true,
     stock: 12
   },
   {
@@ -99,6 +107,7 @@ export const Products: Product[] = [
     image: nasiUduk,
     category: 'Makanan',
     bestseller: false,
+    likes: true,
     stock: 19
   },
   {
@@ -109,6 +118,7 @@ export const Products: Product[] = [
     image: sotoAyam,
     category: 'Makanan',
     bestseller: false,
+    likes: false,
     stock: 19
   },
   {
@@ -119,6 +129,7 @@ export const Products: Product[] = [
     image: esCampur,
     category: 'Minuman',
     bestseller: true,
+    likes: true,
     stock: 19
   },
 ];
