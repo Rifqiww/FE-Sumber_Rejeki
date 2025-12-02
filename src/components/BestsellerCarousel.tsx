@@ -11,7 +11,7 @@ export const BestsellerCarousel = () => {
   const totalPages = Math.ceil(bestsellers.length / productsPerPage);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === totalPages - 1 ? 0 : prevIndex + 1
     );
   };
@@ -37,21 +37,21 @@ export const BestsellerCarousel = () => {
           <p className="text-gray-200 text-xl font-inter">Temukan produk terlaris kami yang selalu diminati pelanggan</p>
         </div>
 
-        <div className="relative bg-tertiary p-8 rounded-[90px] w-ful flex justify-center">
+        <div className="relative bg-tertiary p-8 rounded-[90px] flex justify-center">
           <button
             onClick={prevSlide}
             className="absolute left-[-50px] top-1/2 -translate-y-1/2 -translate-x-6 p-3 z-10 transition-colors select-none"
             aria-label="Previous slide"
           >
             <img 
-              src={nextButton} 
+              src={nextButton}
               alt="Previous"
               draggable="false"
               className="select-none pointer-events-none"
             />
           </button>
 
-          <div className="overflow-hidden w-full">
+          <div className="overflow-hidden w-full py-4">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
