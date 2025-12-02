@@ -22,8 +22,8 @@ export const CartItem = ({
   formatPrice,
 }: CartItemProps) => {
   return (
+    // Item Cart
     <div className="bg-tertiary-dark rounded-xl p-4 flex gap-4 shadow-sm">
-      {/* Checkbox */}
       <div className="flex items-center">
         <button
           onClick={() => toggleSelectItem(item.id)}
@@ -35,7 +35,6 @@ export const CartItem = ({
         </button>
       </div>
 
-      {/* Image */}
       <div className="w-24 h-24 flex-shrink-0 bg-white rounded-lg overflow-hidden">
         <img
           src={item.image}
@@ -44,7 +43,6 @@ export const CartItem = ({
         />
       </div>
 
-      {/* Content */}
       <div className="flex-1 flex flex-col justify-between">
         <div className="flex justify-between items-start">
           <h3 className="text-lg font-semibold text-black">{item.name}</h3>
@@ -54,7 +52,6 @@ export const CartItem = ({
         </div>
 
         <div className="flex justify-between items-end">
-          {/* Quantity Control */}
           <div className="flex items-center gap-3">
             <div className="flex items-center border border-gray-400 rounded-full px-2 py-1">
               <button

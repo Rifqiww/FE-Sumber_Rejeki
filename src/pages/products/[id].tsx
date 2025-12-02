@@ -119,7 +119,6 @@ const ProductDetail = () => {
           <span>Kembali</span>
         </button>
         <div className="flex flex-col lg:flex-row justify-between gap-8">
-          {/* Left Section: Image & Details */}
           <div className="flex flex-col lg:flex-row gap-3 lg:w-[70%]">
             <div className="lg:w-[40%] flex-shrink-0">
               <div className="aspect-square w-full overflow-hidden shadow-md">
@@ -130,7 +129,7 @@ const ProductDetail = () => {
                 />
               </div>
             </div>
-            {/* Product Info */}
+            {/* main product info */}
             <div className="flex-1">
               <h1 className="text-4xl font-bold text-primary mb-1 font-inter">
                 {product.name}
@@ -170,7 +169,6 @@ const ProductDetail = () => {
             </div>
           </div>
 
-          {/* Right Section: Action Card */}
           <div className="lg:w-80 flex-shrink-0">
             <div className="bg-tertiary border-2 border-primary rounded-2xl p-6 shadow-sm sticky top-24">
               <h3 className="text-lg font-montserrat font-bold text-primary mb-4">
@@ -223,9 +221,9 @@ const ProductDetail = () => {
             </div>
           </div>
         </div>
-        {/* User Reviews Section */}
+        {/* user reviews */}
         <UserReviews reviews={productReviews} />
-        {/* Recommendations Section */}
+        
         <Recommendations excludeIds={product ? [product.id] : []} />
       </div>
     </section>

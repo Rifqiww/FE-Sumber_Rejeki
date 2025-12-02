@@ -73,9 +73,7 @@ const Checkout = () => {
         <h1 className="text-3xl font-bold text-black mb-8">Checkout</h1>
 
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Left Column */}
           <div className="flex-1 space-y-6">
-            {/* Address Section */}
             <div className="bg-[#EADBC8] rounded-xl p-6 shadow-sm">
               <h2 className="text-xl font-bold text-[primary] mb-4 uppercase">
                 Alamat Pengiriman
@@ -101,7 +99,6 @@ const Checkout = () => {
               )}
             </div>
 
-            {/* Order Items */}
             <div className="bg-[#EADBC8] rounded-xl p-6 shadow-sm space-y-6">
               {selectedItems.map((item) => (
                 <div key={item.id} className="flex gap-4 items-center">
@@ -127,7 +124,6 @@ const Checkout = () => {
             </div>
           </div>
 
-          {/* Right Column: Summary */}
           <div className="lg:w-[400px]">
             <div className="bg-[#EADBC8] rounded-xl p-6 shadow-sm">
               <h2 className="text-xl font-bold text-[primary] mb-8 leading-tight">

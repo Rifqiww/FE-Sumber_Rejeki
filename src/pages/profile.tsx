@@ -76,9 +76,7 @@ const Profile = () => {
         <ProfileNav />
       </div>
 
-      {/* Main Content */}
       <div className="w-4/5 p-8">
-        {/* Header */}
         <div className="flex items-center mb-8">
           <div className="bg-quaternary/40 p-2 rounded-md mr-4">
             <UserRound size={40} color="#E6D5B8" />
@@ -87,7 +85,6 @@ const Profile = () => {
         </div>
 
         <div className="flex gap-8">
-          {/* Left Column - Form */}
           <div className="w-1/2">
             <div className="mb-6">
               <label
@@ -213,7 +210,6 @@ const Profile = () => {
             </div>
           </div>
 
-          {/* Right Column - Profile Picture */}
           <div className="w-1/2 flex flex-col items-center">
             <div className="relative group">
               <div className="w-64 h-64 bg-[#2E1A12] rounded-full flex items-center justify-center mb-4 overflow-hidden">

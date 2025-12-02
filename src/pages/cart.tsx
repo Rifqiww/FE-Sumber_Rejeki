@@ -39,7 +39,6 @@ const Cart = () => {
 
   return (
     <div className="min-h-screen bg-tertiary p-8 font-sans mt-28 relative">
-      {/* Delete Confirmation Popup */}
       {showDeletePopup && (
         <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50">
           <div className="bg-tertiary-dark rounded-xl p-6 max-w-sm w-full shadow-xl transform transition-all scale-100">
@@ -67,9 +66,7 @@ const Cart = () => {
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-bold mb-8 text-black">Keranjang</h1>
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Left Column: Cart Items */}
           <div className="flex-1 space-y-4">
-            {/* Select All Header */}
             {cartItems.length > 0 ? (
               <div className="bg-tertiary-dark rounded-xl p-4 flex items-center justify-between shadow-sm">
                 <div className="flex items-center gap-4">
@@ -99,7 +96,6 @@ const Cart = () => {
               </div>
             ) : null}
 
-            {/* Items List */}
             <div className="space-y-4">
               {cartItems.length === 0 ? (
                 <div className="bg-tertiary-dark rounded-xl p-12 text-center shadow-sm">
@@ -122,7 +118,6 @@ const Cart = () => {
             </div>
           </div>
 
-          {/* Right Column: Summary */}
           {cartItems.length > 0 && (
             <div className="lg:w-96">
               <div className="bg-tertiary-dark rounded-xl p-6 shadow-sm  top-8">
@@ -148,7 +143,6 @@ const Cart = () => {
           )}
         </div>
 
-        {/* Recommendations Section */}
         <Recommendations excludeIds={cartItems.map((item) => item.id)} />
       </div>
     </div>

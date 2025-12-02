@@ -91,7 +91,7 @@ const Menu: React.FC = () => {
       <div className="relative">
         <div className="bg-primary h-40"></div>
 
-        {/* Search bar container */}
+        {/* searchbar */}
         <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 w-full max-w-4xl px-24">
           <div className="bg-primary-light rounded-xl shadow-lg p-5 flex flex-col md:flex-row items-center justify-center">
             <div className="text-center md:text-left">
@@ -117,17 +117,16 @@ const Menu: React.FC = () => {
       </div>
       <div className="h-10"></div>
 
-      {/* Main Content */}
+      {/* main content*/}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row gap-8">
-          {/* Sidebar */}
+          {/* kategori */}
           <div className="w-full md:w-64 flex-shrink-0">
             <div className="pr-2">
               <h2 className="font-lora font-bold text-2xl mb-4 text-primary">
                 KATEGORI
               </h2>
               <div className="space-y-3">
-                {/* All Products */}
                 <div
                   className={`flex items-center justify-between p-3 rounded-lg cursor-pointer transition-colors ${
                     isAllSelected
@@ -150,7 +149,6 @@ const Menu: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Categories */}
                 {categories.map((category) => (
                   <div
                     key={category}
@@ -181,9 +179,8 @@ const Menu: React.FC = () => {
             </div>
           </div>
 
-          {/* Products */}
+          {/* products */}
           <div className="flex-1">
-            {/* Products Grid */}
             <div>
               <div className="flex justify-between items-center mb-6">
                 <h2 className="text-xl font-semibold text-[#3A2D1D]">
@@ -206,7 +203,6 @@ const Menu: React.FC = () => {
                 </div>
               )}
 
-              {/* Pagination */}
               {totalPages > 1 && (
                 <div className="flex justify-center mt-10 gap-1">
                   <button
