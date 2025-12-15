@@ -35,7 +35,6 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
   const [cartItems, setCartItems] = useState<CartItemType[]>([]);
 
-  // Use a ref to access the latest cartItems in callbacks without adding to dependencies
   const cartItemsRef = useRef(cartItems);
   useEffect(() => {
     cartItemsRef.current = cartItems;
@@ -66,7 +65,6 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({
         );
       }
     } else {
-      // Check stock limit for new item
       if (quantity > product.stock) {
         toast.warning(`Stok tidak mencukupi. Maksimal ${product.stock} item.`);
         setCartItems((prev) => [
