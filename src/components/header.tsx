@@ -25,7 +25,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-primary fixed top-0 left-0 right-0 z-50">
-      <div className="container mx-auto py-5">
+      <div className="w-full px-8 py-5">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <img src={Logo} alt="Sumber Rejeki Logo" className="w-16 h-auto" />

@@ -1,5 +1,6 @@
 import { Trash2, Heart, Minus, Plus, Check } from "lucide-react";
 import type { Product } from "../data/products";
+import { Link } from "react-router-dom";
 
 export interface CartItemType extends Product {
   quantity: number;
@@ -45,7 +46,14 @@ export const CartItem = ({
 
       <div className="flex-1 flex flex-col justify-between">
         <div className="flex justify-between items-start">
-          <h3 className="text-lg font-semibold text-black">{item.name}</h3>
+          <h3 className="text-lg font-semibold text-black">
+            <Link
+              to={`/products/${item.id}`}
+              className="hover:text-primary hover:underline transition-colors"
+            >
+              {item.name}
+            </Link>
+          </h3>
           <p className="text-lg font-bold text-black">
             {formatPrice(item.price)}
           </p>
